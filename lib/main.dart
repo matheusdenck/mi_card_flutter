@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/app_widget.dart';
+
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: Container(),
-      ),
-    ),
-  );
+  runApp(AppWidget());
 }
