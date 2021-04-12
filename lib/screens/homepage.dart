@@ -32,7 +32,8 @@ class _HomePageState extends State<HomePage> {
               'Flutter Developer',
               style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.bold,
+                fontFamily: 'RobotoMono',
+                fontWeight: FontWeight.w300,
                 fontSize: 20,
                 letterSpacing: 2,
               ),

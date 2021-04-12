@@ -28,3 +28,7 @@ flutter:
     fonts:
     - asset: assets/fonts/Oswald-Regular.ttf
 
+  - family: RobotoMono
+    fonts:
+      - asset: assets/fonts/RobotoMono-Regular.ttf
+
