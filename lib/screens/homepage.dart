@@ -17,69 +17,63 @@ class _HomePageState extends State<HomePage> {
           children: [
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/profile.jpg'),
+              backgroundImage: AssetImage('assets/images/profile.jpg'),
             ),
             Text(
               'Matheus Denck',
               style: TextStyle(
-                fontSize: 30,
+                fontFamily: 'Oswald',
+                color: Colors.white,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               'Flutter Developer',
               style: TextStyle(
-                fontSize: 15,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                letterSpacing: 2,
               ),
             ),
             SizedBox(
-              width: 20,
+              height: 25,
+              width: 200,
+              child: Divider(
+                color: Colors.teal[100],
+              ),
             ),
             Card(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.blueGrey,
-                    ),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    Text(
-                      '+55 41 99811-3391',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.blueGrey,
+                ),
+                title: Text(
+                  '+55 41 99811-3391',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.blueGrey,
+                  ),
                 ),
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 10,
             ),
             Card(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.blueGrey,
-                    ),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    Text(
-                      'matheusdenck@gmail.com',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.mail,
+                  color: Colors.blueGrey,
+                ),
+                title: Text(
+                  'matheusdenck@gmail.com',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.blueGrey,
+                  ),
                 ),
               ),
             ),
